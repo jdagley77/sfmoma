@@ -1,6 +1,6 @@
 class ArtworkController < ApplicationController
 
 	def index
-		@art = Artwork.new
+		@art = Artwork.image
 	end
 end

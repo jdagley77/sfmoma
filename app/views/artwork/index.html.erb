@@ -1,1 +1,11 @@
-<h1>hello</h1>
+<h1>index</h1>
+
+<ul>
+<% @art.each do |art|%>
+	<% if art["images"].length == 0 %>
+	<li> N/A </li>
+	<% else %>
+	<%= image_tag(art["images"][0]["public_image"], size: "200x200") %>
+<% end %>
+<% end %>
+</ul>
